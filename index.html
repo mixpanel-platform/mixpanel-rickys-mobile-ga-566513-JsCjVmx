@@ -26,6 +26,7 @@
       window.dates = dateSelect.MPDatepicker('value');
       var params = window.dates;
       window.eventsList = [];
+      // top 100 events
       params['limit'] = 100;
       MP.api.topEvents(params).done(function(results) {
 
